@@ -1,5 +1,7 @@
 # データ仕様
 
+`data/raw/` に置くファイルの仕様。
+
 SIGNATE 練習問題「タイタニックの生存予測」の[データ仕様](https://user.competition.signate.jp/ja/competition/detail/?competition=0b3a60127b31462d9a8866ef7e66f7f2&task=7c4145a386ef4f3ab837d5d0f332b109&tab=dataset)。
 
 ## train.csv（学習用データ / 12.63 KB）
