@@ -49,8 +49,7 @@ make clean   # 仮想環境とキャッシュを削除
 .
 ├── data/
 │   ├── raw/       ダウンロードした元データ（触らない）
-│   ├── processed/ Notebook が生成した加工後データ（作り直せる）
-│   └── README.md  列の説明
+│   └── processed/ Notebook が生成した加工後データ（作り直せる）
 ├── notebooks/     分析・モデリング用の Jupyter Notebook
 ├── .claude/       Claude Code 用のスキル
 ├── Makefile
