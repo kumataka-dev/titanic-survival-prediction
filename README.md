@@ -59,8 +59,20 @@ make clean   # 仮想環境とキャッシュを削除
 └── pyproject.toml
 ```
 
+## つまずいたとき
+
+| 症状 | 対処 |
+| --- | --- |
+| `FileNotFoundError` で CSV が見つからない | `data/raw/` にデータを置く。前の番号の Notebook を実行する |
+| `ModuleNotFoundError: pandas` | カーネルに `.venv` の Python を選ぶ。それでも出る場合は `make init` |
+| `partially initialized module 'pandas'` | カーネルを再起動して上から実行し直す。`make` を実行しても直らない |
+| 保存先のディレクトリが無い | `make init` を実行する |
+
 ## メモ
 
+- Notebook のカーネルには `.venv` の Python を選ぶ。
+- Notebook からデータを読むパスは `../../data/`（`notebooks/` の1つ下にあるため）。
 - Notebook の実行結果は nbstripout により git に保存されない。
   画面上では普通に結果を見ながら作業できるが、コミットされるのはコードだけ。
+- Notebook ごとにメモリは独立している。データの受け渡しは `data/processed/` の CSV を経由する。
 - 提出ファイルは `sample_submit.csv` と同じ形式（ヘッダ無し、1 列目に `id`、2 列目に予測）にする。
