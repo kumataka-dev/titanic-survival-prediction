@@ -48,6 +48,9 @@ SIGNATE 練習問題「タイタニックの生存予測」に取り組む学習
 
 ## Notebook の構成
 
+- `notebooks/tutorial/` — 一通りの流れをなぞった写経部分。**指示がない限り触らない**
+- `notebooks/experiments/` — 精度を上げるための自分の検証。1つの Notebook で1つの工夫に絞る
+- データを読むパスは `../../data/`（Notebook が1階層深いところにある）
 - ファイル名は `<連番>_<内容>.ipynb`。連番は実行順
 - 各 Notebook はカーネルが独立しているので、冒頭で必要なデータを自分で読み込む
 - 次の Notebook に渡すデータは `data/processed/` に CSV で保存する

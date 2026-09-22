@@ -51,7 +51,9 @@ make clean   # 仮想環境とキャッシュを削除
 │   ├── raw/         ダウンロードした元データ（触らない）
 │   ├── processed/   Notebook が生成した加工後データ（作り直せる）
 │   └── submissions/ 投稿用ファイル
-├── notebooks/       分析・モデリング用の Jupyter Notebook
+├── notebooks/
+│   ├── tutorial/    一通りの流れをなぞった写経部分
+│   └── experiments/ 精度を上げるための自分の検証
 ├── .claude/         Claude Code 用のスキル
 ├── Makefile
 └── pyproject.toml
