@@ -17,7 +17,7 @@ init: ## 開発環境をセットアップする
 	@echo "[3/4] データ用のディレクトリを用意しています..."
 	@# 中身が gitignore されるため git は空のこれらを復元できない。
 	@# 無いまま Notebook を実行すると保存時に落ちるので、ここで作る。
-	@mkdir -p data/raw data/processed
+	@mkdir -p data/raw data/processed data/submissions
 	@echo "[4/4] 確認しています..."
 	@uv run --quiet python -c "import pandas; print('      pandas', pandas.__version__, 'を確認')"
 	@test -f data/raw/train.csv \

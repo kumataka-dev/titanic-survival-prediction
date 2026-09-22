@@ -9,6 +9,7 @@
 | [02_analysis.ipynb](02_analysis.ipynb) | どんな属性の人が生き残ったかを調べる | `data/raw/` | — |
 | [03_preprocess.ipynb](03_preprocess.ipynb) | 欠損を埋め、文字列を数値に変換する | `data/raw/` | `data/processed/` |
 | [04_model.ipynb](04_model.ipynb) | モデルを学習し、生存確率を予測する | `data/processed/` | `data/processed/` |
+| [05_submit.ipynb](05_submit.ipynb) | 予測を投稿できる形式に整える | `data/processed/` | `data/submissions/` |
 
 ## 実行する前に
 
@@ -33,7 +34,7 @@ nbstripout が commit 時に出力を取り除くので、画面上では結果�
 記録されるのはコードだけになる。実行結果を残したい場合は別の形で書き出す。
 
 **`data/` の中身は git 管理外。**
-競技規約によりデータを再配布できないため、加工後のものも含めて除外している。
+競技規約によりデータを再配布できないため、加工後のものも提出ファイルも除外している。
 `data/processed/` を消してしまっても、03 を実行し直せば作り直せる。
 
 ## 番号の付け方

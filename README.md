@@ -23,7 +23,7 @@ make init
 
 - `uv sync` — `uv.lock` に記録されたバージョンのパッケージを `.venv` に入れる
 - `nbstripout` の git フィルタを設定 — Notebook をコミットするとき、実行結果を自動で取り除く
-- `data/raw/` と `data/processed/` を作成 — 中身は git 管理外なので、クローンしただけでは存在しない
+- `data/` 配下のディレクトリを作成 — 中身は git 管理外なので、クローンしただけでは存在しない
 - 確認 — pandas が入っているか、`data/raw/` に CSV が置かれているかを表示
 
 ## データの配置
@@ -48,10 +48,11 @@ make clean   # 仮想環境とキャッシュを削除
 ```
 .
 ├── data/
-│   ├── raw/       ダウンロードした元データ（触らない）
-│   └── processed/ Notebook が生成した加工後データ（作り直せる）
-├── notebooks/     分析・モデリング用の Jupyter Notebook
-├── .claude/       Claude Code 用のスキル
+│   ├── raw/         ダウンロードした元データ（触らない）
+│   ├── processed/   Notebook が生成した加工後データ（作り直せる）
+│   └── submissions/ 投稿用ファイル
+├── notebooks/       分析・モデリング用の Jupyter Notebook
+├── .claude/         Claude Code 用のスキル
 ├── Makefile
 └── pyproject.toml
 ```
